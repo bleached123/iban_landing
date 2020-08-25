@@ -1,0 +1,6 @@
+
+mail:
+	mail_server: 'smtp.google.com'
+	password: 'password'
+	email: 'email@email.com'
+	port: 465
