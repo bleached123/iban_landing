@@ -70,9 +70,17 @@
   <ItemGroup>
     <Content Include="config\config.yml" />
     <Content Include="static\css\style.css" />
+    <Content Include="static\img\chen-dairui-ju5tx5zl_as-unsplash.jpg" />
+    <Content Include="static\img\coffee-cup.png" />
+    <Content Include="static\img\cogs.png" />
+    <Content Include="static\img\growth.png" />
     <Content Include="static\img\hero-bg.jpg" />
     <Content Include="static\img\hero-bg.jpg" />
+    <Content Include="static\img\humaaans.png" />
+    <Content Include="static\img\lerone-pieters-zhNmGu_eEPQ-unsplash.jpg" />
+    <Content Include="static\img\light-bulb.png" />
     <Content Include="static\img\logo.png" />
+    <Content Include="static\img\logo_white.png" />
     <Content Include="static\js\main.js" />
     <Content Include="static\vendor\animate.css\animate.css" />
     <Content Include="static\vendor\animate.css\animate.min.css" />
@@ -135,9 +143,6 @@
     <Content Include="static\vendor\waypoints\jquery.waypoints.min.js" />
     <Content Include="templates\base.html" />
     <Content Include="templates\components\about.html" />
-    <Content Include="templates\components\about_info.html">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="templates\components\carousel.html" />
     <Content Include="templates\components\contact.html" />
     <Content Include="templates\components\home.html" />

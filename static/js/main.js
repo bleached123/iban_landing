@@ -8,14 +8,14 @@
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
+      $('#header').removeClass('header-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
     }
   });
 
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
+    if ($(window).scrollTop() > 100) {
+        $('#header').removeClass('header-scrolled');
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
@@ -23,7 +23,6 @@
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       e.preventDefault();
         var target = $(this.hash);
-        console.log(target);
       if (target.length) {
 
         var scrollto = target.offset().top;
@@ -43,7 +42,7 @@
 
         $('html, body').animate({
           scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        }, 1000, 'easeInOutExpo');
 
         if ($(this).parents('.nav-menu, .mobile-nav').length) {
           $('.nav-menu .active, .mobile-nav .active').removeClass('active');
@@ -172,7 +171,7 @@
 
   // Initi AOS
   AOS.init({
-    duration: 1000,
+    duration: 100,
     easing: "ease-in-out-back"
   });
 

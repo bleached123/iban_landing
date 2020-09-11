@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail
-
+from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "SECRET_KEY"
@@ -11,13 +11,13 @@ app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = 'email@email.com'
 app.config["MAIL_PASSWORD"] = 'your-password'
-
+run_with_ngrok(app)
 mail = Mail(app)
 
 
 @app.route('/' , methods=['GET', 'POST'])
 def home():
-	return render_template('index.html')
+	return render_template('index.html', title='iBAN', page='Joining People For a Fairer Trade')
 
 @app.route('/contact', methods=['POST'])
 def contact_mail():
